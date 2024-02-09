@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <img class="logo" src="./assets/logo (1).gif" alt="imagem-dinheiro">
+    <main>
+        <label>
+            Converter de
+            <select>
+                <option>R$ REAL BRASILEIRO</option>
+            </select>
+        </label>
+
+        <label>
+            Converter para
+            <select class="select-currency">
+                <option value="dolar">$ - DOLAR AMERICANO</option> 
+                <option value="euro" >€ - EURO</option>
+                <option value="libra" >£ - LIBRA</option>
+                <option value="bitcoin" >₿ - BITCOIN</option>
+            </select>
+        </label>
+
+        <label id="labelinput">
+            Valor a ser convertido
+            <input class="input-value" type="number" placeholder="R$5.000">
+        </label>
+
+        <button class="button-converter">CONVERTER</button>
+
+        <section>
+            <div class="currency-box">
+                <img class="imgMoney" src="./assets/brasil 2.png" alt="logo-moeda-a-converter">
+                <p class="cash">Real</p>
+                <p class="cashvalue1">R$5,000</p>
+            </div>
+
+            <img id="arrow" src="./assets/Vector.png">
+
+            <div class="currency-box">
+                <img class="imgMoneyConverted" src="./assets/estados-unidos (1) 1.png" alt="logo-moeda-a-convertida">
+                <p class="cash" id="currency-name">Dolar</p>
+                <p class="cashvalue2">$0,00</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>

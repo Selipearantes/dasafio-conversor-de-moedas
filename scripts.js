@@ -38,7 +38,7 @@ function convertValues() {
         moneyConverted.innerHTML = new Intl.NumberFormat("en-GB", {
             style: "currency",
             currency: "GBP"
-        }).format(inputCurrencyValue / libraDay) // --- FORMA 2 DE FAZER pegando o valor do input e ja divindo pelo valor da const do euro la de cima
+        }).format(inputCurrencyValue / libraDay) 
 
     }
 
@@ -46,7 +46,7 @@ function convertValues() {
         moneyConverted.innerHTML = new Intl.NumberFormat("es-US", {
             style: "currency",
             currency: "BTC"
-        }).format(inputCurrencyValue / btcDay)      // --- FORMA 2 DE FAZER pegando o valor do input e ja divindo pelo valor da const do euro la de cima
+        }).format(inputCurrencyValue / btcDay)      
 
     }
 
@@ -60,24 +60,24 @@ function changeCurrency() {
     const currencyName = document.getElementById("currency-name")
     const currencyImg = document.querySelector(".imgMoneyConverted")
 
-    if (selectMoney.value == "dolar") {               // --- SI O SELECT FOR ESCOLHIDO DOLAR ELE MOSTRARA DOLAR
+    if (selectMoney.value == "dolar") {               // --- SI O SELECT FOR ESCOLHIDO DOLAR ELE MOSTRARA escrita DOLAR e a img do estados unidos
         currencyName.innerHTML = 'Dolar Americano'
         currencyImg.src ="./assets/estados-unidos (1) 1.png"
     }
 
 
-    if (selectMoney.value == "euro") {               // --- SI O SELECT FOR ESCOLHIDO EURO ELE MOSTRARA EURO
+    if (selectMoney.value == "euro") {              
         currencyName.innerHTML = 'Euro'
         currencyImg.src ="./assets/euro.png"
     }
 
 
-    if (selectMoney.value == "libra") {               // --- SI O SELECT FOR ESCOLHIDO EURO ELE MOSTRARA EURO
+    if (selectMoney.value == "libra") {              
         currencyName.innerHTML = 'libra'
         currencyImg.src ="./assets/libra.png"
     }
 
-    if (selectMoney.value == "bitcoin") {               // --- SI O SELECT FOR ESCOLHIDO EURO ELE MOSTRARA EURO
+    if (selectMoney.value == "bitcoin") {               
         currencyName.innerHTML = 'bitcoin'
         currencyImg.src ="./assets/libra.png"
     }
